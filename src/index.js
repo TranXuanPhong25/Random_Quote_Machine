@@ -1,18 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router } from "react-router-dom"
 import App from './App'
 import GlobalStyles from './components/GlobaStyles';
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Router>
-      <GlobalStyles>
-        <App />
-      </GlobalStyles>
-    </Router>
-  </React.StrictMode>
+
+  <React.Fragment>
+    <GlobalStyles>
+      <App />
+    </GlobalStyles>
+  </React.Fragment>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
